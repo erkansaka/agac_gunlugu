@@ -1,22 +1,23 @@
 # agac_gunlugu
 
-Projemin amacı:
+Projenin amacı nedir?
+Bu proje, bir WPF (Windows Presentation Foundation) uygulaması olarak tasarlanmıştır. Amacı, kullanıcıya "tree" komutunu çalıştırma, çıktısını bir txt dosyasına kaydetme ve bu dosyayı belirlediği bir e-posta adresine gönderme imkanı sağlamaktır.
 
-Kullanıcıya bir WPF penceresi aracılığıyla "Tree" komutunu çalıştırma ve çıktısını bir txt dosyasına kaydetme imkanı sunmaktır.
-Ayrıca, kullanıcının belirlediği e-posta adresine bu txt dosyasını gönderme özelliği sağlar.
+Hangi programlama dili veya teknolojiler kullanılmıştır?
 
-Kullanılan programlama dili ve teknolojiler:
+Proje, C# programlama dilini kullanır ve WPF (Windows Presentation Foundation) teknolojisini kullanarak kullanıcı arayüzünü oluşturur. C# dilinde kodlama yapılırken .NET Framework'ün sağladığı kütüphanelerden faydalanılır.
 
-Bu kod C# programlama dilini kullanır ve WPF (Windows Presentation Foundation) teknolojisi üzerine inşa edilmiştir.
+Hangi işlevselliği sunmaktadır ve nasıl kullanılır?
 
-Sağladığı işlevsellik ve kullanımı:
+Bu projede, kullanıcıya bir WPF penceresi aracılığıyla aşağıdaki işlevselliği sunar:
 
-Kullanıcı arayüzünde bir buton (myButton) bulunur. Kullanıcı bu butona tıkladığında, "tree" komutu cmd.exe üzerinden çalıştırılır.
-"tree" komutunun çıktısı okunarak bir txt dosyasına yazılır. Dosya adı, o anki tarihi temel alarak belirlenir.
-Ardından, kullanıcının belirlediği e-posta adresine çıktı dosyası eklenerek gönderilir. E-posta gönderimi için Gmail SMTP sunucusu kullanılır.
-Son olarak, bir iletişim kutusu (MessageBox) ile e-posta gönderiminin başarılı olduğu bilgisi kullanıcıya gösterilir.
+*Kullanıcı, WPF penceresinde bulunan bir butona (myButton) tıklayarak "tree" komutunu çalıştırabilir.
+*"tree" komutu, bir yeni işlem (process) olarak başlatılır ve cmd.exe üzerinde çalıştırılır. Bu komut, mevcut dizinin ağaç yapısını gösterir.
+*Komutun çıktısı, bir metin değişkenine (string) kaydedilir.
+*Ardından, çıktı metni bir txt dosyasına kaydedilir. Dosya adı, o anki tarihi temel alarak belirlenir.
+*Kullanıcıdan alınan e-posta adreslerine, çıktı dosyası eklenerek e-posta gönderilir. Bu işlem için Gmail SMTP sunucusu kullanılır.
+*E-posta gönderimi tamamlandıktan sonra, kullanıcıya bir iletişim kutusu (MessageBox) ile gönderimin başarılı olduğu bilgisi verilir.
 
-Projede bulunan dosyalar ve bileşenler:
+Hangi dosyalar veya bileşenler projede bulunmaktadır?
 
-Bu kod, tek bir dosya içinde (MainWindow.xaml.cs) yer alır. Bu dosya, bir WPF uygulamasının ana penceresini temsil eder ve kodun geri kalan kısmını içerir.
-Bu bilgiler doğrultusunda, kodun "WpfTreeCommand" adlı bir WPF projesine ait olduğunu söyleyebiliriz. Proje, kullanıcıya "tree" komutunu çalıştırma, çıktıyı kaydetme ve e-posta ile gönderme yetenekleri sunar.
+Proje, tek bir dosyadan oluşur: MainWindow.xaml.cs. Bu dosya, projenin ana penceresini temsil eder ve WPF uygulamasının arayüzünü ve kodun geri kalanını içerir. Bu dosya içinde gerekli C# kodları ve XAML (Extensible Application Markup Language) işaretlemeleri bulunur. Kodun içinde, kullanıcı arayüzü öğeleri (metin kutuları, düğmeler vb.) ve bu öğelerin etkileşimlerini yöneten kod parçacıkları yer alır.
