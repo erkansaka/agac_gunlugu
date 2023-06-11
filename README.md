@@ -12,10 +12,15 @@ Hangi işlevselliği sunmaktadır ve nasıl kullanılır?
 Bu projede, kullanıcıya bir WPF penceresi aracılığıyla aşağıdaki işlevselliği sunar:
 
 *Kullanıcı, WPF penceresinde bulunan bir butona (myButton) tıklayarak "tree" komutunu çalıştırabilir.
+
 *"tree" komutu, bir yeni işlem (process) olarak başlatılır ve cmd.exe üzerinde çalıştırılır. Bu komut, mevcut dizinin ağaç yapısını gösterir.
+
 *Komutun çıktısı, bir metin değişkenine (string) kaydedilir.
+
 *Ardından, çıktı metni bir txt dosyasına kaydedilir. Dosya adı, o anki tarihi temel alarak belirlenir.
+
 *Kullanıcıdan alınan e-posta adreslerine, çıktı dosyası eklenerek e-posta gönderilir. Bu işlem için Gmail SMTP sunucusu kullanılır.
+
 *E-posta gönderimi tamamlandıktan sonra, kullanıcıya bir iletişim kutusu (MessageBox) ile gönderimin başarılı olduğu bilgisi verilir.
 
 Hangi dosyalar veya bileşenler projede bulunmaktadır?
