@@ -1,4 +1,4 @@
-# agac_kaydet
+# agac_gunlugu
 
 Projemin amacı:
 
