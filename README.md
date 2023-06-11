@@ -1,8 +1,22 @@
 # agac_kaydet
-Projemin amacı: Her çalıştığında size basit bir log kaydı tutmasını sağlar. "cmd.exe" açılır ve ünlü "tree" komutu çalıştırılarak bunu bir txt dosyası halinde kaydeder. Bu txt dosyasını sizin belirleyeceğiniz bir mail adresine yine sizin belirleyeceğiniz mail adresi ile gönderir. Kaydettiği tree komutunun çıktısını; o günün tarihi ile kayıt eder (ddmmyyyy.txt şeklinde).
 
-Proje aslında basit bir işlev görüyor ancak ben kendim bunu yaparak kaydediyorum. Her formattan önce ve ya bir program kurulumu öncesinde. Bazen kaybolan dosyalarımı bulmakta yardımcı oluyor. Örneğin hangi tarihlerde masaüstümde olan belge kaybolmuş vb.
+Projemin amacı:
 
-Programı geliştirdikçe txt dosyasının yanında bir readme atıp kendi notlarımıda düşmek isterim. Bazen bu küçük programlar çok ilginç zamanlarda yardımcı olabiliyor.
+Kullanıcıya bir WPF penceresi aracılığıyla "Tree" komutunu çalıştırma ve çıktısını bir txt dosyasına kaydetme imkanı sunmaktır.
+Ayrıca, kullanıcının belirlediği e-posta adresine bu txt dosyasını gönderme özelliği sağlar.
 
-Ayrıca kaydetiği txt dosyası çok salt olduğu için bir yandan kolay bir şekilde görsele dökülebeilir oluyor. Yardımcı kütüphanelerle yine wpf üzerinden güzel kolay bir düzenleme ile ağaç yapısı bir dosya gezgini görselleştirilmesi ile kolay takip edilebilir olabilir.
+Kullanılan programlama dili ve teknolojiler:
+
+Bu kod C# programlama dilini kullanır ve WPF (Windows Presentation Foundation) teknolojisi üzerine inşa edilmiştir.
+
+Sağladığı işlevsellik ve kullanımı:
+
+Kullanıcı arayüzünde bir buton (myButton) bulunur. Kullanıcı bu butona tıkladığında, "tree" komutu cmd.exe üzerinden çalıştırılır.
+"tree" komutunun çıktısı okunarak bir txt dosyasına yazılır. Dosya adı, o anki tarihi temel alarak belirlenir.
+Ardından, kullanıcının belirlediği e-posta adresine çıktı dosyası eklenerek gönderilir. E-posta gönderimi için Gmail SMTP sunucusu kullanılır.
+Son olarak, bir iletişim kutusu (MessageBox) ile e-posta gönderiminin başarılı olduğu bilgisi kullanıcıya gösterilir.
+
+Projede bulunan dosyalar ve bileşenler:
+
+Bu kod, tek bir dosya içinde (MainWindow.xaml.cs) yer alır. Bu dosya, bir WPF uygulamasının ana penceresini temsil eder ve kodun geri kalan kısmını içerir.
+Bu bilgiler doğrultusunda, kodun "WpfTreeCommand" adlı bir WPF projesine ait olduğunu söyleyebiliriz. Proje, kullanıcıya "tree" komutunu çalıştırma, çıktıyı kaydetme ve e-posta ile gönderme yetenekleri sunar.
